@@ -1,6 +1,7 @@
 <div align="center">
 
   <h1> SIMPLE REST API CAPABLE OF CRUD OPERATION</h1>
+  
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/joseph-ademola-570a1974/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -10,7 +11,7 @@
 
 </div>
 
-
+  <em>Kindly find link to project at the bottom</em>
 - [Introduction](#introduction)
 - [Requirements](#requirements)
 - [Setting up the project](#setting-up-the-project)
@@ -334,10 +335,7 @@ None
 *Response format:*
 ![delete](https://github.com/comrade70/person-api/assets/66082731/dd4b1787-28aa-45f0-82b4-bec9ec2c87da)
 
-
-
-
-
+## project link - https://person-api-m63i.onrender.com/api/
 
 THANKS FOR READING ! 🎉
 
