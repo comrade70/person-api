@@ -286,7 +286,7 @@ None
 
 `GET /api/<int:pk>`
 
-*
+
 *Request format:*
 ```shell
 None
