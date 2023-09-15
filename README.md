@@ -280,12 +280,11 @@ All requests and responses are in JSON format. However, Django rest framework pr
 ```bash
 None
 ```
+*Response format*
+![get all](https://github.com/comrade70/person-api/assets/66082731/c62731eb-06ce-428f-b38e-a30100f4127a)
 
-
-![get all](https://github.com/comrade70/person-api/assets/66082731/91a2e315-59b3-4257-83ff-7b8270bc05d7)
 
 `GET /api/<int:pk>`
-
 
 *Request format:*
 ```shell
@@ -333,7 +332,33 @@ Note that the name field only allows string value,  else the system rejects the 
 None
 ```
 *Response format:*
+
 ![delete](https://github.com/comrade70/person-api/assets/66082731/dd4b1787-28aa-45f0-82b4-bec9ec2c87da)
+
+
+Lastly, performing <strong>GET api/</strong> gives the output below:
+
+
+```json
+[
+    {
+        "id": 1,
+        "name": "Gudogan Russel"
+    },
+    {
+        "id": 2,
+        "name": "essien mensah"
+    },
+    {
+        "id": 3,
+        "name": "Theodore Rosevelt"
+    },
+    {
+        "id": 4,
+        "name": "Micheal Smith"
+    }
+]
+```
 
 ## project link - https://person-api-m63i.onrender.com/api/
 
