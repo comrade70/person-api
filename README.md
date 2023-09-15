@@ -238,5 +238,45 @@ python manage.py runserver 8000
 This will start the development server at http://127.0.0.1:8000/. Add /api to access the API to perform CRUD OPERATIONS
 
 
+
+## API Endpoints
+
+The following API endpoints are available:
+
+ `GET /api/`
+
+Retrieves the information of all persons in the database
+
+`GET /api/<int:pk>`
+
+Retrieves details of a person with the specified ID or primary key.
+
+ `POST /api/`
+
+Adds a new person to the database.
+
+ `PUT /api/<int:pk>`
+
+Updates all the details of an existing person with the specified ID.
+
+ `PATCH /api/<int:pk>`
+
+Updates some of the details of an existing person
+
+`DELETE /api/<int:pk>`
+
+Deletes a person with the specified ID.
+
+## Request/Response Formats
+
+All requests and responses are in JSON format. However, Django rest framework provides a user friendly interface for the API. Here are the request and response formats for each endpoint:
+
+`GET /api/`
+
+**Request format:**
+```bash
+None
+```
+
 THANKS FOR READING ! 🎉
 
