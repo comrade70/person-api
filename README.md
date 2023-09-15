@@ -135,7 +135,6 @@ class PersonRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
 9. Project-level urls.py
 
 ```bash
-"""
 URL configuration for apiproject project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -150,7 +149,7 @@ Class-based views
 Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
+
 from django.contrib import admin
 from django.urls import path, include
 
@@ -158,6 +157,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('api.urls'))
 ]
+
+```
 
 10. App Level Url.py
 
@@ -173,24 +174,23 @@ urlpatterns = [
 
 
 ```
-```
 
 ## Dependencies Used
-pip==23.2.1,  
-psycopg2-binary==2.9.5,
-gunicorn==20.1.0,
-whitenoise==6.5.0,
-Django==3.2.21,
-djangorestframework == 3.14.0,
-python-dotenv == 0.21.1,
+- pip==23.2.1,  
+- psycopg2-binary==2.9.5,
+- gunicorn==20.1.0,
+- whitenoise==6.5.0,
+- Django==3.2.21,
+- djangorestframework == 3.14.0,
+- python-dotenv == 0.21.1,
 
-asgiref==3.7.2,
-bleach==6.0.0,
-pytz==2023.3.post1,
-six==1.16.0,
-sqlparse==0.4.4,
-tzdata==2023.3
-webencodings==0.5.1
+- asgiref==3.7.2,
+- bleach==6.0.0,
+- pytz==2023.3.post1,
+- six==1.16.0,
+- sqlparse==0.4.4,
+- tzdata==2023.3
+- webencodings==0.5.1
 
 
 ## How to use this Repository
