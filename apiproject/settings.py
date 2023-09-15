@@ -34,7 +34,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = os.getenv('DEBUG')
 DATABASE_URL = os.getenv('DATABASE_URL')
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'person-api-m63i.onrender.com', 'LOCALHOST']
 
 
 # Application definition
