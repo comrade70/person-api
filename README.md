@@ -15,11 +15,13 @@
 - [Requirements](#requirements)
 - [Setting up the project](#setting-up-the-project)
   - [Create a virtual environment](#create-a-virtual-environment)
-  - [Create a new project](#create-a-new-project)
-  - [Create a Django app](#create-a-django-app)
-- [Dependencies Used](#dependencies-usec)
-- [How to use this repository](#how-to-use-this-repo)
-
+  - [Create a Django project](#create-a-new-project)
+  - [Create a Django App](#create-a-django-app)
+- [Dependencies Used](#dependencies-used)
+- [How to use this Repository](#how-to-use-this-repository)
+- [API Endpoints](#api-endpoints)
+- [Request/Response Formats](#request-/-response-formats)
+  
 
 ---
 
@@ -273,10 +275,69 @@ All requests and responses are in JSON format. However, Django rest framework pr
 
 `GET /api/`
 
-**Request format:**
+*Request format:*
 ```bash
 None
 ```
+
+
+![get all](https://github.com/comrade70/person-api/assets/66082731/91a2e315-59b3-4257-83ff-7b8270bc05d7)
+
+`GET /api/<int:pk>`
+
+*
+*Request format:*
+```shell
+None
+```
+
+*Response format:*
+```json
+{ "id": 1, "name": "essien mensah" }
+```
+![get 1](https://github.com/comrade70/person-api/assets/66082731/6a7d0521-c755-4df0-9efe-b57e66116123)
+
+ `POST /api/`
+
+*Request format:*
+```json 
+{
+  "id": 5,
+  "name": "Bernando Silva"
+}
+```
+Note that the name field only allows string value,  else the system rejects the POST, PULL, or PATCH request
+
+*Response format:*
+![create](https://github.com/comrade70/person-api/assets/66082731/aa54c1bf-12c4-431a-b693-7281b9bab7de)
+
+
+ `PUT /api/<int:pk>`
+
+*Request format:*
+```json
+{
+  "id": 1,
+  "name": "Gudogan Russel",
+}
+```
+
+*Response format:*
+![update](https://github.com/comrade70/person-api/assets/66082731/53e494fd-6344-4878-85f2-7aea4fdbb12c)
+
+`DELETE /api/<int:pk>`
+
+*Request format:*
+```shell
+None
+```
+*Response format:*
+![delete](https://github.com/comrade70/person-api/assets/66082731/dd4b1787-28aa-45f0-82b4-bec9ec2c87da)
+
+
+
+
+
 
 THANKS FOR READING ! 🎉
 
