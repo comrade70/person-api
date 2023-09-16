@@ -27,15 +27,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-SECRET_KEY = 'django-insecure-=x6a-aetvmq3&x*1fg=#zi^i$0n&90^il(%#+++c-kj_+qn6ew'
-DEBUG = False
 #KEY, DEBUG....ETC TO BE PUT HERE
 
-# # Access environment variables
-# SECRET_KEY = os.getenv('SECRET_KEY')
-# DEBUG = os.getenv('DEBUG')
-# DATABASE_URL = os.getenv('DATABASE_URL')
-# ALLOWED_HOSTS = ['127.0.0.1', 'person-api-m63i.onrender.com', 'LOCALHOST']
+# Access environment variables
+SECRET_KEY = os.getenv('SECRET_KEY')
+DEBUG = os.getenv('DEBUG')
+DATABASE_URL = os.getenv('DATABASE_URL')
+ALLOWED_HOSTS = ['127.0.0.1', 'person-api-m63i.onrender.com', 'LOCALHOST']
 
 # Application definition
 
@@ -101,24 +99,13 @@ WSGI_APPLICATION = 'apiproject.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'api_project_1a9l',
-        'USER': 'api_project_1a9l_user',
-        'PASSWORD': 'QqSaz5bK3guFkhlG08pq32bCpUJhACrp',
-        'HOST': 'dpg-ck1njt021fec73e58qb0-a.oregon-postgres.render.com',
-        'PORT': 5432,
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
