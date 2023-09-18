@@ -10,12 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
-import os
-
-# from dotenv import load_dotenv
-# Load environment variables from .env file
-# load_dotenv()
-
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -26,13 +20,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-
-#KEY, DEBUG....ETC TO BE PUT HERE
-
 # Access environment variables
-SECRET_KEY = os.getenv('SECRET_KEY')
-DEBUG = os.getenv('DEBUG')
-DATABASE_URL = os.getenv('DATABASE_URL')
+SECRET_KEY = 'django-insecure-=x6a-aetvmq3&x*1fg=#zi^i$0n&90^il(%#+++c-kj_+qn6ew'
+
+DEBUG = False
+
 ALLOWED_HOSTS = ['127.0.0.1', 'person-api-m63i.onrender.com', 'LOCALHOST']
 
 # Application definition
